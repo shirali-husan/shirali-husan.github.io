@@ -167,7 +167,6 @@ THis is where the styling for about comes from
 }
 
 
-
 /*
 THis is where the styling for project comes from
  */
@@ -285,14 +284,14 @@ THis is where the styling for skills comes from
     font-size: 18px;
 }
 .skills .skills-content .right .line{
+    display: flex;
     height: 5px;
     width: 100%;
     background: lightgrey;
-    position: relative;
+    /*position: relative;*/
 }
 .skills .skills-content .right .line::before{
     content: "";
-    position: absolute;
     height: 100%;
     left: 0;
     top: 0;
@@ -391,6 +390,7 @@ Responsive media jquery implement
         left: 0;
 
     }
+
 
     .navbar .menu li {
         display: block;
