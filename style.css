@@ -80,9 +80,6 @@ For all the Home section styling
 .home {
     display: flex;
     /*background: url("./image/banner.jpg") no-repeat center;*/
-    /*
-    The heroku doesn't support image upload there for i have used just regular color.
-     */
     background: dimgray;
     width: auto;
     height: 100vh;
@@ -192,7 +189,7 @@ THis is where the styling for project comes from
 }
 
 .project .project-content .card{
-    width: calc(40% - 20px);
+    width: auto;
     background: #222;
     text-align: center;
     border-radius: 3px;
@@ -239,9 +236,6 @@ THis is where the styling for skills comes from
     font-family: 'Ubuntu', sans-serif;
 }
 
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
 .skills .title {
     color: crimson;
 }
@@ -427,7 +421,7 @@ Responsive media jquery implement
             padding: 0 25px;
         }
         .home .home-content .text-1 {
-            font-size: 40px;
+            font-size: 50px;
         }
         .home .home-content .text-2 {
             font-size: 10px;
@@ -463,5 +457,4 @@ Responsive media jquery implement
         width: auto;
         height: auto;
     }
-
 }
