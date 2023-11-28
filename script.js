@@ -34,5 +34,28 @@ $(document).ready(function () {
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Toggle the mobile menu
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        
+        menuBtn.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    
+        // Smooth scrolling for menu items
+        document.querySelectorAll('.menu a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close the menu if open in mobile view
+                menu.classList.remove('active');
+                menuBtn.classList.remove('active');
+            });
+        });
+    });
 
 });

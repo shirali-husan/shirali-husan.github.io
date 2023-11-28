@@ -1,460 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400;1,500&family=Ubuntu:ital,wght@0,500;1,300;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-.max-width{
-    max-width:  1300px;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.max-width {
+    max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-/*navbar style here*/
+
+/* Navbar Styles */
 .navbar {
-    position: fixed;
-    width: 100%;
-    padding: 30px 0;
-    font-family: 'Ubuntu',sans-serif;
-    transition: all 0.3s ease;
-}
-
-/*
-this part is where the navigation bar will be sticky at all time and move with the user.
- */
-.navbar.sticky{
+    background: #333;
     padding: 15px 0;
-    background: darkblue;
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar.sticky {
+    background: #222;
 }
 
-.navbar .logo a{
-    color: floralwhite;
-    font-size: 35px;
-    font-weight: 600;
+.navbar .logo a, .navbar .menu li a {
+    color: #fff;
 }
 
-.navbar .logo a span {
+.navbar .logo a span, .navbar .menu li a:hover {
     color: crimson;
 }
 
-.navbar .menu li {
-    list-style: none;
-    display: inline-block;
-}
-
-.navbar .menu li a {
-    color:floralwhite;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 25px;
-    transition: color 0.3s ease;
-}
-
-.navbar .menu li a:hover{
-    color: crimson;
-}
-
-/*
-for menu button styling
- */
-
-.menu-btn {
-    color: floralwhite;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-
-
-/*
-For all the Home section styling
- */
-
+/* Home Section Styles */
 .home {
     display: flex;
-    /*background: url("./image/banner.jpg") no-repeat center;*/
-    background: dimgray;
-    width: auto;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
+    background: url("./image/banner.jpg") no-repeat center;
+    background-size: cover;
 }
 
-.home .max-width {
-    margin: auto 0 auto 40px;
-}
 .home .home-content .text-1 {
-    color: floralwhite;
-    font-size: 90px;
-    font-weight: 100;
+    color: #fff;
+    font-size: 2.5rem; /* Adjusted for responsiveness */
 }
+
 .home .home-content .text-2 {
-    color: floralwhite;
-    font-size: 20px;
-    font-weight: 10;
+    color: #fff;
+    margin-top: 10px;
 }
 
-.home .home-content .text-2 span {
-    color: red;
-    font-weight: 500;
-}
-.home .home-content a{
-    display: inline-block;
+.home .home-content a {
     background: crimson;
-    color: floralwhite;
-    font-size: 30px;
-    margin-top: 5px;
-    padding: 10px 36px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
+    color: #fff;
+    margin-top: 20px;
 }
 
-.home .home-content a:hover{
-    color: darkblue;
-    background: floralwhite;
-}
-
-
-
-/*
-THis is where the styling for about comes from
- */
-
+/* About Section Styles */
 .about {
-    display: flex;
-    /*background: url("./image/banner.jpg") no-repeat center;*/
-    background: dimgray;
-    width: auto;
-    height: 100vh;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
-}
-.about .title{
-    text-align: center;
-    color: crimson;
-    font-size: 40px;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family:'Ubuntu', sans-serif;
+    padding: 50px 0;
+    background: #f4f4f4;
 }
 
-.about .max-width {
-    margin: auto 0 auto 40px;
+.about .title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .about .about-content .text-1 {
-    color: floralwhite;
-    font-size: 90px;
-    font-weight: 100;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .about .about-content .text-2 {
-    color: floralwhite;
-    font-size: 20px;
-    font-weight: 10;
+    color: #333;
+    font-size: 1rem;
 }
 
-.about .about-content .text-2 span {
-    color: crimson;
-}
-
-
-/*
-THis is where the styling for project comes from
- */
-.project{
-    display: flex;
-    background: dimgray;
-    width: auto;
-    height: 100vh;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.project .project-content .card .text {
-    color: floralwhite;
+/* Project Section Styles */
+.project {
+    padding: 50px 0;
+    background: #fff;
 }
 
 .project .title {
-    color: floralwhite;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.project .project-content .card{
-    width: auto;
-    background: #222;
+.project .project-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project .project-content .card {
+    background: #f4f4f4;
+    padding: 20px;
     text-align: center;
-    border-radius: 3px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-.project .project-content .card:hover{
+
+.project .project-content .card:hover {
     background: crimson;
-}
-.project .project-content .card .box{
-    position: center;
-    transition: all 0.3s ease;
-}
-.project .project-content .card:hover .box{
-    transform: scale(1.05);
-}
-.project .project-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.project .project-content .card:hover i{
     color: #fff;
 }
-.project .project-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
 
-
-/*
-THis is where the styling for skills comes from
- */
-
+/* Skills Section Styles */
 .skills {
-    display: flex;
-    /*background: url("./image/banner.jpg") no-repeat center;*/
-    background: dimgray;
-    width: auto;
-    height: 100vh;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
 }
 
 .skills .title {
-    color: crimson;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.skills .skills-content .left .text{
-    color: floralwhite;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.skills .skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.skills .skills-content .left p{
-    text-align: justify;
-}
-
-.skills .skills-content .bars .info span{
-    color: floralwhite;
-}
-
-.skills .skills-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: crimson;
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    display: flex;
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    /*position: relative;*/
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}
-
-
-
-/*
-footer section style
- */
-
-footer{
-    background: #111;
-    padding: 15px 23px;
+/* Footer Styles */
+footer {
+    background: #222;
     color: #fff;
     text-align: center;
+    padding: 20px 0;
 }
-footer span a{
+
+footer a {
     color: crimson;
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
 }
 
-
-/*
- When the size are large the text sizes follows.
-  */
-
-/*
-Responsive media jquery implement
- */
-@media (max-width: 1104px) {
-    .home .max-width {
-        margin-left: 0px;
-    }
-
-    .about .max-width {
-        margin-left: 0px;
-    }
-    .project .max-width {
-        margin-left: 0px;
-    }
-    .project .project-content .card {
-        position: center;
-    }
-}
-
-
-/*
-Responsive media jquery implement
- */
-
-
-@media (max-width: 800px) {
+/* Responsive Styles */
+@media (max-width: 768px) {
     .max-width {
-        padding: 0 50px;
+        padding: 0 30px;
     }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: darkblue;
+
+    .navbar .menu, .home, .about, .project, .skills {
         text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
     }
 
-    .navbar .menu.active{
-        left: 0;
-
+    .about .about-content, .skills .skills-content {
+        grid-template-columns: 1fr;
     }
 
-
-    .navbar .menu li {
-        display: block;
+    .project .project-content {
+        grid-template-columns: 1fr;
     }
+}
 
-    .navbar .menu li a {
-        display: inline-block;
-        margin:  20px 0;
-        font-size: 20px;
+@media (max-width: 480px) {
+    .navbar .logo a {
+        font-size: 1.5rem;
     }
 
     .home .home-content .text-1 {
-        font-size: 50px;
-    }
-    .home .home-content .text-2 {
-        font-size: 15px;
-    }
-    .home .home-content a{
-        font-size: 10px;
+        font-size: 1.8rem;
     }
 
-
-    /*
-    When the size are small the text sizes follows.
-     */
-    @media (max-width: 560px) {
-        .max-width {
-            padding: 0 25px;
-        }
-        .home .home-content .text-1 {
-            font-size: 50px;
-        }
-        .home .home-content .text-2 {
-            font-size: 10px;
-        }
-    }
-
-    .about .about-content .text-1 {
-        font-size: 50px;
-    }
-    .about .about-content .text-2 {
-        font-size: 20px;
-    }
-    .project .project-content .card .box .text {
-        font-size: 30px;
-    }
-    .project .project-content .card .box{
-        width: auto;
-        height: auto;
-    }
-
-    .skills .title {
-        font-size: 10px;
-    }
-
-    .skills .skills-content .left .text {
-        font-size: 10px;
-    }
-
-    .skills .skills-content .text {
-        font-size: 3px;
-    }
-    .skills .skills-content .bars {
-        width: auto;
-        height: auto;
+    .about .about-content .text-1, .skills .skills-content .left .text {
+        font-size: 1.3rem;
     }
 }

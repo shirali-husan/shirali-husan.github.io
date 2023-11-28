@@ -1,163 +1,142 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <title>Personal-Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirali Husan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-<nav class="navbar">
-    <div class="max-width">
-        <div class="logo"><a href="#">Personal<span>Web.</span></a></div>
-        <ul class="menu">
-            <li class="homebar"><a href="#home">Home</a></li>
-            <li class="aboutbar"><a href="#about">About</a></li>
-            <li class="projectbar"><a href="#project">Project</a></li>
-            <li class="skillsbar"><a href="#skills">skills</a></li>
-        </ul>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-</nav>
-
-<!--home section starts here -->
-<section class="home" id="home">
-    <div class="max-width">
-        <div class="home-content">
-            <div class="text-1">Shirali Husan</div>
-            <div class="text-2">Fellow at <span> Department States </span></div>
-            <a href="Husan Resume Web.pdf" target="_blank">DownLoad Resume</a>
-        </div>
-    </div>
-</section>
-
-
-<!--about section starts here-->
-
-<section class="about" id="about">
-    <div class="max-width">
-        <h2 class="title">About me: </h2>
-        <div class="about-content">
-            <div class="text-1">A short biography</div>
-            <div class="text-2">I am State Department Information Technology fellow currently intern at Bureau of
-                Information Resource Management (IRM)/ Office of Foreign Operations Intern at U.S.
-                Department of State and I am also studying Cyber Security at Northeastern University <span>
-                        <a href="https://www.faitfellowship.org/2020-cohort/">      Click here for my Bio </a></span>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Shirali<span>Web.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Shirali Husan</div>
+                <div class="text-2">Fellow at Department of State</div>
+                <a href="Husan_Resume_Web.pdf" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
 
-<!-- projects that -->
-<section class="project" id="project">
-    <div class="max-width">
-        <h2 class="title">My Project</h2>
-        <div class="project-content">
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-code"></i>
-                    <div class="text">Guessing Game</div>
-                    <p style="color: floralwhite">Guessing game was a game that flips card and register based on user
-                        cursor the game was implemented in <span>Python</span>.</p>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="text-1">A Short Biography</div>
+                <div class="text-2">I am a State Department Information Technology fellow, currently interning at Bureau of Information Resource Management (IRM) / Office of Foreign Operations Intern at U.S. Department of State. I am also studying Cyber Security at Northeastern University. <a href="https://www.faitfellowship.org/2020-cohort/">Click here for my Bio</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="project" id="project">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="project-content">
+                <!-- Project 1 -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Guessing Game</div>
+                        <p>Guessing game is a card game developed in Python, emphasizing user interaction and dynamic gameplay.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-code"></i>
-                    <div class="text">MCV</div>
-                    <p style="color: floralwhite"> MCV stands for model controller and view which takes in an object
-                        oriented approach to </p>
+                <!-- Project 2 -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="text">MCV Architecture</div>
+                        <p>MCV (Model-Controller-View) is a software design pattern for developing web applications with object-oriented programming.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-code"></i>
-                    <div class="text">Personal Website</div>
-                    <p style="color: floralwhite">Baisc Jss , HTML and Jquery to make a functional website as a project. </p>
+                <!-- Project 3 -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-globe"></i>
+                        <div class="text">Personal Website</div>
+                        <p>A personal website showcasing my skills and projects, built using HTML, CSS, and JavaScript.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-<!-- Skills that starts here -->
-<section class="skills" id="skills">
-    <div class="max-width">
-        <h2 class="title">My Coding Skills</h2>
-        <div class="skills-content">
-            <div class="column left">
-                <div class="text">The Coding skills that I learned at Northeastern University</div>
-                <p style="color: floralwhite">After intensive align program I have learned many useful skills to help me
-                    understand the real world
-                    problem through the glance of computer sience and skill. I have learned not only how to program but
-                    use the knowledge to slave the problem that we faces today.</p>
-                <a href="#">Going Back Up</a>
-            </div>
-            <table style="width:100%">
-                <tr>
-                    <th style bgcolor="#fffaf0">Foreign languages</th>
-                    <th style bgcolor="#fffaf0">Chinese</th>
-                    <th style bgcolor="#fffaf0">Russian</th>
-                    <th style bgcolor="#fffaf0">Uzbek</th>
-                    <th style bgcolor="#fffaf0">Uyghur</th>
-                    <th style bgcolor="#fffaf0">Krygez</th>
-                    <th style bgcolor="#fffaf0">Turkish</th>
-                </tr>
-            </table>
-            <div class="column right">
-                <div class="bars">
-                    <div class="info">
-                        <span>C</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="line html"></div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Coding Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Skills Acquired at Northeastern University</div>
+                    <p>I have honed various skills, enabling me to tackle real-world problems through computer science and technology. My programming expertise is complemented by my ability to apply these skills in practical scenarios.</p>
+                    <a href="#">Back to Top</a>
                 </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>Java</span>
-                        <span>80%</span>
+                <div class="column right">
+                    <!-- Skill Bars -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>C</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line c"></div>
                     </div>
-                    <div class="line css"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>JavaScript</span>
-                        <span>60%</span>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line java"></div>
                     </div>
-                    <div class="line js"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>Python</span>
-                        <span>60%</span>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line javascript"></div>
                     </div>
-                    <div class="line php"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>HTML</span>
-                        <span>70%</span>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line python"></div>
                     </div>
-                    <div class="line mysql"></div>
+                    <div class="bars">
+                        <div the "info">
+                            <span>HTML</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <span>Created By <a href="https://www.linkedin.com/in/shiralihusan/" target="_blank">Shirali</a> | <span
-            class="far fa-copyright"></span> 2021 All rights reserved.</span>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/shiralihusan/" target="_blank">Shirali Husan</a> | © 2021 All rights reserved.</span>
+    </footer>
 
-<script src="script.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
